@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fieldwork theme documentation</title>
+<meta name="description" content="Setup guide, settings reference, FAQ and support policy for the Fieldwork Shopify theme.">
+<style>
+:root { --bg: #f7f6ef; --fg: #202b24; --muted: #55605a; --accent: #263e2c; --line: #d9dccf; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif; }
+.wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+header { border-bottom: 1px solid var(--line); padding: 28px 0; }
+header p { margin: 4px 0 0; color: var(--muted); }
+h1 { font: 400 2.4rem/1.1 Georgia, serif; margin: 0; }
+h2 { font: 400 1.7rem/1.2 Georgia, serif; margin: 56px 0 12px; padding-top: 8px; border-top: 1px solid var(--line); }
+h3 { font-size: 1.05rem; margin: 28px 0 6px; }
+nav ol { columns: 2; padding-left: 20px; }
+a { color: var(--accent); }
+code { background: #e9ebe1; padding: 1px 5px; border-radius: 4px; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: .95rem; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+.note { padding: 14px 16px; border-left: 3px solid var(--accent); background: #ecefe4; }
+footer { margin: 64px 0 40px; color: var(--muted); font-size: .9rem; }
+@media (max-width: 600px) { nav ol { columns: 1; } h1 { font-size: 2rem; } }
+</style>
+</head>
+<body>
+<header><div class="wrap"><h1>Fieldwork</h1><p>Theme documentation &#183; version 0.3.0</p></div></header>
+<main class="wrap">
+<p>Fieldwork is a starter theme for small specialist stores: hobby equipment, outdoor gear and similar catalogs. It focuses on clear product information and a short path from browsing to checkout. This guide covers setup, every theme setting, the available sections and how to get help.</p>
+
+<nav aria-label="Contents"><ol>
+<li><a href="#start">Getting started</a></li>
+<li><a href="#settings">Theme settings</a></li>
+<li><a href="#home">Homepage sections</a></li>
+<li><a href="#header-footer">Header and footer</a></li>
+<li><a href="#product">Product pages</a></li>
+<li><a href="#collection">Collections, filters and search</a></li>
+<li><a href="#cart">Cart and checkout</a></li>
+<li><a href="#pages">Pages, blog and contact</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#support">Support policy</a></li>
+</ol></nav>
+
+<h2 id="start">1. Getting started</h2>
+<ol>
+<li>In your Shopify admin, go to <strong>Online Store &#8250; Themes</strong>. Find Fieldwork in your theme library and click <strong>Customize</strong>.</li>
+<li>Before editing, use <strong>&#8230; &#8250; Duplicate</strong> to keep a backup copy of the theme.</li>
+<li>Set your logo, colors and fonts under <strong>Theme settings</strong> (the gear icon in the editor).</li>
+<li>Choose your menus in the <strong>Header</strong> and <strong>Footer</strong> sections.</li>
+<li>Pick a collection for the homepage <strong>Featured collection</strong> section and add images to the hero and other sections.</li>
+<li>Preview on desktop and mobile using the device toggle at the top of the editor, then click <strong>Save</strong> and <strong>Publish</strong> when you are ready.</li>
+</ol>
+<p class="note">Empty image settings show Shopify placeholder illustrations. Example cards on the homepage are labelled <em>Example</em> and disappear once you select a collection.</p>
+
+<h2 id="settings">2. Theme settings</h2>
+<table>
+<tr><th>Group</th><th>Setting</th><th>What it does</th></tr>
+<tr><td>Brand</td><td>Logo</td><td>Shown in the header instead of your store name. Recommended: a wide PNG or SVG with a transparent background.</td></tr>
+<tr><td></td><td>Favicon</td><td>The small icon in browser tabs. Use a square image of at least 32 &#215; 32 px.</td></tr>
+<tr><td></td><td>Social media image</td><td>Used when a page without its own image is shared on social media.</td></tr>
+<tr><td>Colors</td><td>Background / Text</td><td>Main page background and text color.</td></tr>
+<tr><td></td><td>Button background / Button text</td><td>Buttons, badges, the footer and selected options.</td></tr>
+<tr><td></td><td>Secondary background / Secondary text</td><td>Image placeholders, the buying guide, newsletter band and cart summary.</td></tr>
+<tr><td>Typography</td><td>Body font / Heading font</td><td>Choose from the Shopify font library. Bold and italic styles load automatically when used.</td></tr>
+<tr><td>Social media</td><td>Instagram, Facebook, YouTube, Pinterest, TikTok</td><td>Paste full profile URLs. Icons appear in the footer only for filled-in fields.</td></tr>
+</table>
+<p>Check that each pair of colors has enough contrast to be readable. Free contrast checkers are available online.</p>
+
+<h2 id="home">3. Homepage sections</h2>
+<p>Add, remove and reorder sections in the left sidebar of the theme editor.</p>
+<h3>Editorial hero</h3>
+<p>Eyebrow, heading, description, up to two buttons and an image shown in an arched frame. The second button appears only when both its label and link are filled in. Set a focal point on the image (in the image picker or under <strong>Content &#8250; Files</strong>) to control cropping.</p>
+<h3>Featured collection</h3>
+<p>Shows products from one collection. Settings: eyebrow, heading, collection, products to show (2&#8211;12) and columns on desktop (2&#8211;4). Product cards show sale and sold-out badges and a second image on hover when a product has one.</p>
+<h3>Featured collections</h3>
+<p>Up to six collection cards. Each block takes a collection and an optional image that replaces the collection's own image.</p>
+<h3>Image with text</h3>
+<p>Image, eyebrow, heading, rich text and an optional button. Choose whether the image sits left or right on desktop.</p>
+<h3>Buying guide</h3>
+<p>Up to four numbered steps that help beginners choose. Choose the secondary background or the button colors for the section background.</p>
+<h3>Newsletter</h3>
+<p>Email signup that adds subscribers to your Shopify customer list with the tag <code>newsletter</code>.</p>
+<h3>Custom Liquid</h3>
+<p>For small custom snippets or app embed code. Errors in custom code can break the page, so test on a duplicate theme first.</p>
+
+<h2 id="header-footer">4. Header and footer</h2>
+<p><strong>Header:</strong> choose the main menu. Fieldwork supports three menu levels. On mobile the menu opens as a full-screen panel. Search, account and cart icons are always shown; the cart icon shows the number of items.</p>
+<p><strong>Footer:</strong> choose the footer menu and write a short description. The footer also shows social icons, country/language selectors (when you sell in more than one market or language), accepted payment icons and the Follow on Shop button.</p>
+
+<h2 id="product">5. Product pages</h2>
+<p>Open a product in the editor and select the <strong>Product</strong> section. Blocks can be reordered or removed: Vendor, Title, Price, Variant picker, Buy buttons, Description, SKU, Buying information (a collapsible row with your own text), Custom Liquid and app blocks.</p>
+<ul>
+<li><strong>Variant picker:</strong> each option value is a button. Unavailable combinations are shown with a dashed outline. Color swatches appear when you set up swatches in your product options.</li>
+<li><strong>Media:</strong> images, videos and 3D models are supported. On desktop, media shows in a grid; on phones, customers swipe or tap thumbnails. Assign an image to each variant so it shows when that variant is selected.</li>
+<li><strong>Buy buttons:</strong> quantity, add to cart, dynamic checkout buttons, Shop Pay Installments messaging, subscription options (from a selling-plan app) and gift card recipient fields.</li>
+<li><strong>Pickup availability</strong> appears automatically for locations with local pickup enabled.</li>
+<li><strong>Recommendations</strong> sections below the product show related or complementary products.</li>
+</ul>
+
+<h2 id="collection">6. Collections, filters and search</h2>
+<p>Filters come from Shopify's free <strong>Search &amp; Discovery</strong> app. Install it, then choose filters such as availability, price, product type, vendor or variant options. On desktop, filters show in a sidebar; on phones, under a <strong>Filter</strong> button. Sorting applies as soon as a customer picks an option.</p>
+<p>Predictive search shows matching products, articles and pages as customers type on the search page.</p>
+
+<h2 id="cart">7. Cart and checkout</h2>
+<p>The cart page lists items with options, subscription plans, discounts and unit prices, a notes field and the order total. The checkout button and accelerated checkout buttons (when enabled in <strong>Settings &#8250; Payments</strong>) take customers to Shopify checkout.</p>
+
+<h2 id="pages">8. Pages, blog and contact</h2>
+<p>Create pages under <strong>Online Store &#8250; Pages</strong>. Choose the <code>contact</code> template for a contact form. Blog posts use the Blog and Article templates; comments appear when enabled for the blog.</p>
+
+<h2 id="faq">9. FAQ</h2>
+<h3>Why do I see placeholder illustrations?</h3>
+<p>An image setting is empty. Choose an image in that section's settings.</p>
+<h3>Why are my homepage product cards labelled "Example"?</h3>
+<p>No collection is selected in the Featured collection section, or the collection has no products.</p>
+<h3>Filters don't appear on my collection page.</h3>
+<p>Install Shopify's Search &amp; Discovery app and add filters there. Filters only show when they have values in the current collection.</p>
+<h3>How do I change the button and footer color?</h3>
+<p>Theme settings &#8250; Colors &#8250; Button background and Button text.</p>
+<h3>Can I edit the theme code?</h3>
+<p>Yes, but duplicate the theme first. Code changes are not covered by support, and you may need to reapply them after updating. For custom work, consider hiring a <a href="https://www.shopify.com/partners/directory">Shopify Partner</a>.</p>
+
+<h2 id="support">10. Support policy</h2>
+<p>Support is included with your purchase and covers questions about Fieldwork's features and settings, and bug fixes in the theme. We aim to reply within two business days.</p>
+<p>Support doesn't include custom code changes, third-party app setup or design services.</p>
+<p>To get help, use the support contact form linked from the Fieldwork listing in the Shopify Theme Store. Please include your store URL, the theme version (shown under Online Store &#8250; Themes) and a screenshot or screen recording of the issue.</p>
+</main>
+<footer class="wrap">Fieldwork theme documentation &#183; Last updated November 13, 2026</footer>
+</body>
+</html>
